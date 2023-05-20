@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Agendamento de Sessão</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="titulo">Agende sua Sessão</div>
+        </div>
+    </header>
+
+    <article>
+        <form class="pessoal" method="get">
+            <div class="dados">
+                <fieldset>
+                    <legend>DADOS PESSOAIS</legend>
+                    <label><p>Nome Completo:</p><input type="type" name="nome"></label>
+                    <label><p>Endereço Completo:</p><input type="type" name="endereco"></label>
+                    <label><p>Gênero: <select name="genero">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Não declarar</option>
+                        </select></p></label>
+                        <label><p>Data de Nascimento:</p><input type="date" name="nascimento"/><br></label>
+                        <input class="enviar" type="submit" name="submit" value="Enviar"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>PREFERÊNCIAS</legend>
+                    <label><p>Selecione uma Terapia</p>
+                    <div class="preferencia">
+                    <select name="terapia">
+                        <option>Acumpultura</option>
+                        <option>Cromoterapia</option>
+                        <option>Heiki</option>
+                        <option>Alinhamento de Chakras</option>
+                    </select></label><br>
+                    <input class="enviar" type="submit" name="preferencia" value="Enviar"/>
+                </div>
+                </fieldset>
+
+            </div>
+        </form>
+    </article>
+
+    <article>
+        <form method="get">
+        <div class="agendamento">
+            <fieldset>
+                <legend>AGENDAMENTO</legend>
+                <label><p>Selecione a Clínica</p>
+                <select name="clinica">
+                    <option>endereço 1</option>
+                    <option>endereço 2</option>
+                    <option>endereço 3</option>
+                    <option>endereço 4</option>
+                    <option>endereço 5</option>
+                </select></label>
+                <label><p>Selecione data</p>
+                <input type="date" name="data"/></label>
+                <label><p>Selecione Horario</p>
+                <input type="time" name="horario"><br></label>
+                <input class="enviar" type="submit" value="Enviar">
+
+            </fieldset>
+        </div>
+    </form>
+    </article>
+
+    <article>
+        <form method="get"
+        <div class="observacao">
+            <fieldset>
+                <legend>OBSERVAÇÕES ESPECIAIS</legend>
+                <textarea name="observacoes" placeholder="Escreva qualquer informação que julgar importante"></textarea><br>
+                <input class="enviar" type="submit" value="Enviar">
+            </fieldset>
+        </div>
+    </article>
+
+    <footer>
+        <div class="rodape">Criado por Leandro Rocha</div>
+    </footer>
+</body>
+
+</html>
